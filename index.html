@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="The Role of Consequential and Functional Sound in Human–Robot Interaction: Toward Audio-Augmented Reality Interfaces.">
+  <meta name="keywords" content="Audio augmented reality, Functional Sounds, Consequential Sounds, Human-Robot Interaction">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Role of Consequential and Functional Sound in Human–Robot Interaction: Toward Audio-Augmented Reality Interfaces</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://aliyah-smith.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://audioar.github.io">
+            AudioAR
+          <!-- </a>
+          <a class="navbar-item" href="https://nerfies.github.io">
+            Nerfies
+          </a>
+          <a class="navbar-item" href="https://latentfusion.github.io">
+            LatentFusion
+          </a>
+          <a class="navbar-item" href="https://photoshape.github.io">
+            PhotoShape -->
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">The Role of Consequential and Functional Sound in Human-Robot Interaction: Toward Audio-Augmented Reality Interfaces</h1>
+          <div class="is-size-2 publication-authors">
+            <span class="author-block">
+              <a href="https://aliyah-smith.github.io">Aliyah Smith</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://monroekennedy3.com/">Monroe Kennedy III</a><sup>1</sup>,</span>
+          </div>
+
+          <div class="is-size-1 publication-authors">
+            <span class="author-block"><sup>1</sup>Stanford University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2511.15956"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2511.15956"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://youtu.be/cS0-iCbRCsg"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/AudioAR_short.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        This website gives an overview of our paper, which explores the role of consequential, 
+        functional, and spatial sound in human-robot interaction.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<!-- <section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/steve.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/chair-tp.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/shiba.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/fullbody.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-blueshirt">
+          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/blueshirt.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/mask.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-coffee">
+          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/coffee.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-toby">
+          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/toby2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            As robots become increasingly integrated into everyday environments, 
+            understanding how they communicate with humans is critical. 
+            Sound offers a powerful channel for interaction, 
+            encompassing both operational noises and intentionally designed auditory cues. 
+          </p>
+          <p>
+            
+            In this three-part study, we examined the effects of consequential and functional sounds on human perception and behavior, 
+            including a novel exploration of spatial sound through localization and handover tasks. The first part utilized a 
+            between-subjects design (N=48) to assess how the presence of consequential sounds from a Kinova Gen3 robotic manipulator 
+            influences human perceptions of the robot (in person and through video) during a simple pick and place task. The second part
+            (N=51) investigated spatial sound localization accuracy using a augmented reality (AR) environment, 
+            where participants identified the source of 3D sounds. The third part (N=41) evaluated the impact of 
+            functional and spatial auditory cues on user experience and perception of the robot through a within-subjects design.
+            
+          </p>
+          <p>
+            Results show that consequential sounds of the Kinova Gen3 manipulator did not negatively affect perceptions, 
+            spatial localization is highly accurate for lateral cues but declines for frontal cues, 
+            and spatial sounds can simultaneously convey task-relevant information while promoting warmth and reducing discomfort. 
+            These findings highlight the potential of functional and transformative auditory design to enhance human-robot 
+            collaboration and inform future sound-based interaction strategies.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://youtu.be/cS0-iCbRCsg"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <!-- <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Visual Effects</h2>
+          <p>
+            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
+            would be impossible without nerfies since it would require going through a wall.
+          </p>
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/dollyzoom-stacked.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div> -->
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <!-- <div class="column">
+        <h2 class="title is-3">Matting</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              As a byproduct of our method, we can also solve the matting problem by ignoring
+              samples that fall outside of a bounding box during rendering.
+            </p>
+            <video id="matting-video" controls playsinline height="100%">
+              <source src="./static/videos/matting.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+    </div> -->
+    <!--/ Matting. -->
+
+    <!-- Experiment A. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Experiment A: An In-person Replication of the Study on the Effects of Consequential Sounds on Human Perception of Robots </h2>
+
+        <!-- Hypotheses. -->
+        <h3 class="title is-4">Hypotheses</h3>
+        <div class="content has-text-justified">
+          <p>
+            H1: When observing the robot with sound (through recording or collocation), 
+            participants will exhibit more negative associated effects,
+            report lower levels of liking, and express a reduced desire for physical co-location.
+
+            H2: Human perceptions of the robot when exposed to consequential sounds 
+            through video recordings will be more positive overall compared to those of 
+            participants directly colocated with the robot.
+          </p>
+        </div>
+        <!-- <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-3 has-text-centered">
+            <img src="./static/images/interpolate_start.jpg"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+            <p>Start Frame</p>
+          </div>
+          <div class="column interpolation-video-column">
+            <div id="interpolation-image-wrapper">
+              Loading...
+            </div>
+            <input class="slider is-fullwidth is-large is-info"
+                   id="interpolation-slider"
+                   step="1" min="0" max="100" value="0" type="range">
+          </div>
+          <div class="column is-3 has-text-centered">
+            <img src="./static/images/interpolate_end.jpg"
+                 class="interpolation-image"
+                 alt="Interpolation end reference image."/>
+            <p class="is-bold">End Frame</p>
+          </div>
+        </div>
+        <br/> -->
+        <!--/ Hypotheses. -->
+
+        <!-- Experimental Design -->
+        <h3 class="title is-4">Experimental Design</h3>
+        <div class="content has-text-justified">
+          <p>
+            To establish a baseline understanding of how sound influences human perceptions of
+            the Kinova Gen3 manipulator, we replicated a previously con-
+            ducted between-subjects study that examined similar effects
+            using online videos and surveys. The primary objective
+            was to determine whether consequential sounds elicit negative
+            perceptions toward this specific robot and to assess potential
+            differences between participants who were co-located with the
+            robot and those who observed it through video recordings.
+            Accordingly, we designed four experimental conditions:
+            Recorded and Muted, Recorded with Sound, In-person with
+            Reduced Sound, and In-person with Sound, shown in Figure
+            2. In the Recorded and Muted condition, participants viewed a
+            silent video of the Kinova robot on a computer monitor. In the
+            Recorded with Sound condition, participants watched the same
+            video using headphones, which played the robot's operational
+            sounds at a standardized volume across all participants. For
+            the two in-person conditions, participants were seated directly
+            across from the robot, positioned to match the viewpoint used
+            in the recorded videos. In the In-person with Reduced Sound
+            condition, participants wore noise-canceling headphones to
+            substantially attenuate the robot's sounds, while in the In-
+            person with Sound condition, participants experienced the
+            robot without any auditory modification.
+
+            Across all four conditions, the Kinova manipulator executed
+            a standardized pick-and-place task lasting approximately one
+            minute, comprising typical arm and gripper movements repre-
+            sentative of routine operation. Participants were not provided
+            any prior information about the task or its purpose before
+            observing the robot. Furthermore, the true objective of the
+            study was withheld to minimize potential bias related to sound
+            perception.
+          </p>
+        </div>
+        <div class="column is-3 has-text-centered">
+          <img src="./static/images/part_1_conditions.png"
+                class="part1-methods-image"
+                alt="Part 1 methods image."/>
+          <p class="is-bold">End Frame</p>
+        </div>
+        <div class="content has-text-centered">
+          <video id="part1-video"
+                 controls
+                 muted
+                 preload
+                 playsinline
+                 width="75%">
+            <source src="./static/videos/part1_robot.mov"
+                    type="video/mov">
+          </video>
+        </div>
+        <!--/ Experimental Design. -->
+
+        <!-- Results -->
+        <h3 class="title is-4">Results</h3>
+        <div class="content has-text-justified">
+          <p>
+            Participants completed a 11-item Likert-scale questionnaire assessing their perceptions of the robot. 
+            The questions measured four perceptual scales: Associated Affect, Distraction, Liking, and Physical Co-location Desire.
+            Those assigned to the sound conditions were additionally asked questions specific
+            to the robot's auditory characteristics. 
+          </p>
+        </div>
+        <div class="column is-3 has-text-centered">
+          <img src="./static/images/part_1_likert_box_whisker_means.png"
+                class="part1-results-image"
+                alt="Part 1 results image."/>
+          <p class="is-bold">End Frame</p>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            Box-and-whisker plots illustrating participant responses across the four
+            experimental conditions and four perceptual scales in Experiment A. 
+            Higher scores indicate more positive perceptions. Black diamonds represent mean values,
+            black horizontal lines indicate medians, plus signs denote outliers, 
+            boxes correspond to the interquartile range (25th-75th percentiles), 
+            and whiskers extend to 1.5 times the interquartile range. (N = 48)
+
+            One-way ANOVAs revealed no significant differences between the four conditions across all perceptual scales:
+            Associated Effect (p = 0.1256), Distracted (p = 1.0000), Colocate
+            (p = 0.7323), and Like (p = 2.662). Trends in the data, from
+            less positive to more positive perception, were as follows:
+            Associated Effect: In-person, Sound &lt; Recorded, Muted
+            &lt; Recorded, Sound &lt; In-person, Muted (means: 5.58,
+            5.60, 6.12, 6.48)
+            • Distracted: In-person, Muted &lt; In-person, Sound &lt;
+            Recorded, Muted &lt; Recorded, Sound (means: 4.75, 4.92,
+            5.00, 5.08)
+            • Colocate: In-person, Sound &lt; Recorded, Muted &lt; In-
+            person, Muted &lt; Recorded, Sound (means: 3.92, 4.03,
+            4.33, 4.61)
+            • Like: Recorded, Muted &lt; In-person, Sound &lt; In-person,
+            Muted &lt; Recorded, Sound (means: 4.36, 5.03, 5.06, 5.19)
+          </p>
+        </div>
+        <!--/ Results. -->
+      </div>
+    </div>
+    <!--/ Experiment A. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Experiment B. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Experiment B: A Study on Spatial Sound Localization </h2>
+        <!-- Hypotheses. -->
+        <h3 class="title is-4">Hypotheses</h3>
+        <div class="content has-text-justified">
+          <p>
+            H3: Participants will more accurately distinguish static
+            sounds originating from their left or right sides (i.e., at larger
+            azimuth angles) than those coming from directly in front of
+            them.
+          </p>
+        </div>
+        <!-- <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-3 has-text-centered">
+            <img src="./static/images/interpolate_start.jpg"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+            <p>Start Frame</p>
+          </div>
+          <div class="column interpolation-video-column">
+            <div id="interpolation-image-wrapper">
+              Loading...
+            </div>
+            <input class="slider is-fullwidth is-large is-info"
+                   id="interpolation-slider"
+                   step="1" min="0" max="100" value="0" type="range">
+          </div>
+          <div class="column is-3 has-text-centered">
+            <img src="./static/images/interpolate_end.jpg"
+                 class="interpolation-image"
+                 alt="Interpolation end reference image."/>
+            <p class="is-bold">End Frame</p>
+          </div>
+        </div>
+        <br/> -->
+        <!--/ Hypotheses. -->
+
+        <!-- Experimental Design -->
+        <h3 class="title is-4">Experimental Design</h3>
+        <div class="content has-text-justified">
+          <p>
+            To gain a deeper understanding of participants' ability to discriminate spatial sounds
+            and to inform the development of our spatial sound design,
+            we conducted an experiment in AR. Participants were seated
+            at a table directly across from the robot while wearing the
+            Microsoft HoloLens 2, a mixed-reality headset capable of ren-
+            dering spatialized 360-degree audio sources. The mixed-reality
+            application, developed by the authors, initially presented three
+            red spheres within the participant's field of view. These spheres
+            were positioned to approximately span the width of the robot's
+            workspace.
+
+            Following the initial scene, participants experienced two
+            additional scenes: one featuring three green spheres and another 
+            featuring five blue spheres. In each scene, participants
+            were asked to identify the locations of 3D audio sources,
+            which were visually indicated by the corresponding spheres.
+            For Scenes 1 and 2, the audio sources were first presented
+            sequentially with concurrent visual feedback (i.e., the spheres
+            oscillated simultaneously with the sounds). Each sequence was
+            played twice before the visual feedback was removed, after
+            which the sounds were presented in random order. Following
+            each sound, participants verbally indicated to the experimenter
+            which sphere they believed corresponded to the audio source.
+            This procedure was repeated for two trials, with each sound
+            source played once per trial. In Scene 3, however, participants
+            did not receive any visual feedback prior to identifying the
+            audio sources.
+          </p>
+        </div>
+        <div class="column is-3 has-text-centered">
+          <img src="./static/images/part2_scenes.png"
+                class="part2-methods-image"
+                alt="Part 2 methods image."/>
+          <p class="is-bold">End Frame</p>
+        </div>
+        <div class="content has-text-centered">
+          <video id="part1-video"
+                 controls
+                 muted
+                 preload
+                 playsinline
+                 width="75%">
+            <source src="./static/videos/scene1.mp4"
+                    type="video/mmp4">
+          </video>
+        </div>
+        <!--/ Experimental Design. -->
+
+        <!-- Results -->
+        <h3 class="title is-4">Results</h3>
+        <div class="content has-text-justified">
+          <p>
+            For each scene, the true sequence of audio sources and the corresponding participant-identified 
+            (predicted) sequence were recorded across both trials.
+            
+            Quantitative results were analyzed using confusion matrices 
+            that compared the predicted and true labels for
+            each scene across all participants. These matrices were used
+            to compute classification accuracy and examine error patterns,
+            providing insight into overall spatial sound localization per-
+            formance and potential sources of misclassification.
+          </p>
+        </div>
+        <div class="column is-3 has-text-centered">
+          <img src="./static/images/part_2_confusion_matrices_borders.png"
+                class="part2-results-image"
+                alt="Part 2 results image."/>
+          <p class="is-bold">End Frame</p>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            Participants’ accuracy generally
+            declined as scene complexity increased. Accuracy decreased
+            slightly from Trial 1 to Trial 2 in Scene 1, whereas it
+            showed slight improvements in Scenes 2 and 3 across trials.
+            Specifically, overall accuracy was 95% and 93% for Scene 1
+            (Trials 1 and 2, respectively), 84% and 86% for Scene 2, and
+            74% and 78% for Scene 3.
+          </p>
+        </div>
+        <!--/ Results. -->
+      </div>
+    </div>
+    <!--/ Experiment B. -->
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{smith2025roleconsequentialfunctionalsound,
+      title={The Role of Consequential and Functional Sound in Human-Robot Interaction: Toward Audio Augmented Reality Interfaces}, 
+      author={Aliyah Smith and Monroe Kennedy III},
+      year={2025},
+      eprint={2511.15956},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2511.15956}, 
+}</code></pre>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Experiment C. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Experiment C: Exploring Functional Sounds in Human-Robot Collaboration </h2>
+        <!-- Hypotheses. -->
+        <h3 class="title is-4">Hypotheses</h3>
+        <div class="content has-text-justified">
+          <p>
+            H4: Adding functional sound will increase participants'
+            feelings of competence and reduce participants' feelings of
+            discomfort compared to consequential sounds alone.
+            
+            H5: Adding spatial sound will increase participants' feelings
+            of warmth and competence, and reduce participants' feelings
+            of discomfort compared to consequential sounds alone.
+            
+            H6: Participants will accurately interpret the intended mean-
+            ing of the functional sounds presented.
+          </p>
+        </div>
+        <!-- <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-3 has-text-centered">
+            <img src="./static/images/interpolate_start.jpg"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+            <p>Start Frame</p>
+          </div>
+          <div class="column interpolation-video-column">
+            <div id="interpolation-image-wrapper">
+              Loading...
+            </div>
+            <input class="slider is-fullwidth is-large is-info"
+                   id="interpolation-slider"
+                   step="1" min="0" max="100" value="0" type="range">
+          </div>
+          <div class="column is-3 has-text-centered">
+            <img src="./static/images/interpolate_end.jpg"
+                 class="interpolation-image"
+                 alt="Interpolation end reference image."/>
+            <p class="is-bold">End Frame</p>
+          </div>
+        </div>
+        <br/> -->
+        <!--/ Hypotheses. -->
+
+        <!-- Experimental Design -->
+        <h3 class="title is-4">Experimental Design</h3>
+        <div class="content has-text-justified">
+          <p>
+            Participants were tasked with completing a Lego structure over the course
+            of three trials, with the robot assisting by providing additional
+            Lego pieces as needed. Each trial was conducted under a dis-
+            tinct sound condition: Consequential, Functional, or Spatial.
+           
+            Participants were informed that they would complete a brief
+            survey after each trial to provide feedback on the robot and
+            the associated sounds; no additional information about the
+            sound conditions was provided to prevent participants from
+            focusing explicitly on the auditory stimuli. Following the three
+            trials, participants completed a post-experiment questionnaire,
+            reflecting on their experiences and offering opinions and
+            recommendations for each of the three sound conditions from
+            memory. Towards the conclusion of the survey, the two aug-
+            mented sound conditions were replayed, and the experimenter
+            provided an explanation of their functional design. Finally,
+            participants indicated their preferred sound condition and
+            offered any additional comments regarding the sound designs.
+          </p>
+        </div>
+        <!-- <div class="content has-text-centered">
+          <video id="part1-video"
+                 controls
+                 muted
+                 preload
+                 playsinline
+                 width="75%">
+            <source src="./static/videos/scene1.mp4"
+                    type="video/mmp4">
+          </video>
+        </div> -->
+        <!--/ Experimental Design. -->
+
+        <!-- Results -->
+        <h3 class="title is-4">Results</h3>
+        <div class="content has-text-justified">
+          <p>
+            For each scene, the true sequence of audio sources and the corresponding participant-identified 
+            (predicted) sequence were recorded across both trials.
+            
+            Quantitative results were analyzed using confusion matrices 
+            that compared the predicted and true labels for
+            each scene across all participants. These matrices were used
+            to compute classification accuracy and examine error patterns,
+            providing insight into overall spatial sound localization per-
+            formance and potential sources of misclassification.
+          </p>
+        </div>
+        <div class="column is-3 has-text-centered">
+          <img src="./static/images/part_3_rosas_box_whisker_excl_means.png"
+                class="part2-results-image"
+                alt="Part 2 results image."/>
+          <p class="is-bold">End Frame</p>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            Analyses from the post-trial surveys indicated no statistically 
+            significant differences across the three attribute scales:
+            Warmth (p = 0.205), Competence (p = 0.384), and Discomfort
+            (p = 0.081). Exploratory post-hoc paired comparisons suggested 
+            trends toward differences between specific conditions.
+            Specifically, the Consequential and Spatial sound conditions
+            showed a trend toward higher Warmth (p = 0.090) and lower
+            Discomfort (p = 0.042) in the Spatial condition, while the
+            Functional and Spatial sound conditions showed a trend
+            toward lower Discomfort (p = 0.052) in the Spatial condition. 
+            Although these findings should be interpreted cautiously,
+            given the non-significant overall tests and uncorrected multiple
+            comparisons, they point to potential differences in how sound
+            design influences participants perceptions and may guide
+            future research.
+
+            Trends in the data were as follows:
+            • Warmth: Consequential &lt; Functional &lt; Spatial (means:
+            1.99, 2.01, 2.49)
+            • Competence: Consequential &lt; Functional &lt; Spatial
+            (means: 3.47, 3.57, 3.91)
+            • Discomfort: Spatial &lt; Consequential &lt; Functional
+            (means: 1.41, 1.70, 1.74)
+          </p>
+        </div>
+        <!--/ Results. -->
+      </div>
+    </div>
+    <!--/ Experiment C. -->
+  </div>
+</section>
+
+
+<footer class="footer">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website uses the Nerfies <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
