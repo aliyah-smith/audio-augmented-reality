@@ -158,5 +158,6 @@ body {
 
 .demographics-image {
   width: 100%;   /* fill parent container */
-
+  height: auto;  /* maintain aspect ratio */
+  max-width: none; /* override any max-width */
 }
