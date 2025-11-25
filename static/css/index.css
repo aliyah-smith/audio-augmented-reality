@@ -162,3 +162,15 @@ body {
   height: auto;  /* maintain aspect ratio */
   max-width: none; /* override any max-width */
 }
+
+.video-row {
+  display: flex;
+  justify-content: center; /* center them */
+  gap: 20px;               /* space between videos */
+}
+
+.video-row video {
+  width: 30%;              /* 3 videos per row */
+  max-width: 400px;        /* optional: prevent them from being huge */
+  border-radius: 8px;      /* optional: rounded corners */
+}
